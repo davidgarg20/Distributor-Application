@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.distributorapp">
+
+    <application
+        android:name=".Notification"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2">
+        <activity android:name=".DistrubutorMain"></activity>
+        <activity android:name=".CollectPayment" />
+        <activity
+            android:name=".SelectShop2"
+            android:label="@string/title_activity_select_shop2"
+            android:theme="@style/AppTheme2.NoActionBar" />
+        <activity
+            android:name=".SelectShop"
+            android:label="@string/title_activity_select_shop"
+            android:theme="@style/AppTheme2.NoActionBar" />
+        <activity android:name=".PaymentMain" />
+        <activity android:name=".PreviousOrder" />
+        <activity android:name=".Thankyouactivity" />
+        <activity android:name=".PlaceOrder" />
+        <activity android:name=".Ordermain" />
+        <activity android:name=".addshop" />
+        <activity
+            android:name=".Order"
+            android:label="Select Shop" />
+        <activity
+            android:name=".SalesmanMain"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.login.ShopLoginActivity"
+            android:label="@string/title_activity_shop_login" />
+        <activity
+            android:name=".ui.login.Distributor_LOGIN$SalesmanLogin"
+            android:label="@string/title_activity_salesman_login"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.distributorapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.login.Distributor_LOGIN"
+            android:label="@string/title_activity_distributor__login"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.distributorapp.MainActivity" />
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
